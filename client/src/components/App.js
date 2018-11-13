@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import Header from './Header';
+
 const SurveyNew = () => <h2>Suvery New</h2>;
 const Landing = () => <h2>Landing Page</h2>;
 const Dashboard = () => <h2>Dashboard</h2>;
-const Header = () => <h2>Header</h2>;
 
 export default () => (
   <div>
