@@ -41,7 +41,7 @@ class Mailer extends helper.Mail {
   async send() {
     const request = this.sgApi.emptyRequest({
       method: 'POST',
-      path: 'v3/mail/send',
+      path: '/v3/mail/send',
       body: this.toJSON()
     });
 
@@ -51,3 +51,5 @@ class Mailer extends helper.Mail {
 }
 
 module.exports = Mailer;
+
+//const survey = {title: 'my title', subject: 'my subject', body:'this is body of the email', recipients:'slevin.glevra@gmail.com'}
